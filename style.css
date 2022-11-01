@@ -1,0 +1,218 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.header-title {
+  width: 133px;
+  height: 25px;
+
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+
+  color: #333333;
+}
+
+.scarecrow {
+  height: 448px;
+  min-width: 540px;
+  border-radius: 0px;
+  margin-right: 120px;
+  margin-top: 2.8rem;
+}
+
+.text-title {
+  max-width: 586px;
+  width: 100%;
+  margin-bottom: 36px;
+
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5rem;
+  letter-spacing: -0.035em;
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+
+.text-content {
+  max-width: 381px;
+  margin-bottom: 64px;
+
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.035em;
+
+  /* Gray 2 */
+
+  color: #4f4f4f;
+}
+
+.header-container {
+  height: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 144px);
+  height: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  max-height: 24px;
+}
+
+.back-to-home {
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Space Mono";
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 2.8rem;
+  letter-spacing: -0.035em;
+  color: #fff;
+  background-color: #333;
+  display: inline-block;
+  margin-bottom: 48px;
+  width: 180px;
+  text-align: center;
+  padding: 18px;
+}
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover,
+.hvr-bob:focus,
+.hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+.github-anchor {
+  text-decoration: none;
+  color: #bdbdbd;
+}
+
+.footer-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+
+  color: #bdbdbd;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 660px) {
+  .scarecrow {
+    margin-right: 0;
+    min-width: 100%;
+    height: auto;
+  }
+
+  .text-title {
+    text-align: center;
+  }
+
+  .text-content {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .back-to-home {
+    width: 150px;
+  }
+
+  .info-container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-text {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .header-container {
+    justify-content: center;
+  }
+}
